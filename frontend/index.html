@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AgentDesk — Support Agent Console</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header>
+  <h1>AgentDesk</h1>
+  <p class="sub">Docs-grounded support agent &middot; citations on every answer &middot;
+  escalates to a human below 0.70 confidence</p>
+  <div id="health" class="pill">loading…</div>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Ask a question</h2>
+    <div class="row">
+      <input id="customer" placeholder="customer (optional)" value="demo-user">
+      <button id="sampleBtn" type="button">Load sample docs</button>
+    </div>
+    <textarea id="question" rows="3"
+      placeholder="e.g. How does continuous batching work in vLLM?"></textarea>
+    <button id="askBtn" type="button">Ask AgentDesk</button>
+    <div id="answer"></div>
+  </section>
+
+  <section class="card">
+    <h2>Add a document</h2>
+    <input id="docSource" placeholder="source name, e.g. runbook.md">
+    <textarea id="docText" rows="4" placeholder="Paste markdown or plain text…"></textarea>
+    <button id="docBtn" type="button">Ingest document</button>
+    <div id="docs"></div>
+  </section>
+
+  <section class="card">
+    <h2>Human escalation queue <span id="escCount"></span></h2>
+    <div id="escalations"></div>
+  </section>
+
+  <section class="card">
+    <h2>Evaluation harness</h2>
+    <p>Runs the golden set and reports measured recall@5, correctness,
+    grounding, escalation accuracy and latency.</p>
+    <button id="evalBtn" type="button">Run evals</button>
+    <pre id="evalOut"></pre>
+  </section>
+
+  <section class="card">
+    <h2>Stats</h2>
+    <pre id="stats"></pre>
+  </section>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

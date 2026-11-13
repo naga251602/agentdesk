@@ -1,0 +1,34 @@
+{"question": "What is PagedAttention and why does it reduce KV cache fragmentation?", "expected_source": "vllm.md", "expected_terms": ["pagedattention", "blocks", "fragmentation"], "expect": "answer"}
+{"question": "How do I connect to PostgreSQL with psql and list tables?", "expected_source": "postgresql.md", "expected_terms": ["psql", "lists tables"], "expect": "answer"}
+{"question": "What does EXPLAIN ANALYZE show for a query?", "expected_source": "postgresql.md", "expected_terms": ["execution plan", "timings"], "expect": "answer"}
+{"question": "Why does PostgreSQL need VACUUM and what are dead tuples?", "expected_source": "postgresql.md", "expected_terms": ["dead tuples", "reclaims"], "expect": "answer"}
+{"question": "How long does a password reset link stay valid?", "expected_source": "support_faq.md", "expected_terms": ["30 minutes", "only once"], "expect": "answer"}
+{"question": "What roles exist in a workspace and who controls billing?", "expected_source": "support_faq.md", "expected_terms": ["owner", "admin", "member", "billing"], "expect": "answer"}
+{"question": "What is the API rate limit per API key and what happens when it is exceeded?", "expected_source": "support_faq.md", "expected_terms": ["600 requests per minute", "429"], "expect": "answer"}
+{"question": "How does continuous batching work in vLLM?", "expected_source": "vllm.md", "expected_terms": ["continuous batching", "decoding step"], "expect": "answer"}
+{"question": "What is prefix caching and when does it help?", "expected_source": "vllm.md", "expected_terms": ["prefix", "kv cache blocks", "time to first token"], "expect": "answer"}
+{"question": "What are TTFT and TPOT in LLM serving?", "expected_source": "vllm.md", "expected_terms": ["time to first token", "time per output token"], "expect": "answer"}
+{"question": "How does jsonb differ from plain json and which index speeds up containment queries?", "expected_source": "postgresql.md", "expected_terms": ["jsonb", "gin index", "containment"], "expect": "answer"}
+{"question": "What is the default transaction isolation level in PostgreSQL?", "expected_source": "postgresql.md", "expected_terms": ["read committed", "isolation"], "expect": "answer"}
+{"question": "How do I back up a PostgreSQL database and what is point-in-time recovery?", "expected_source": "postgresql.md", "expected_terms": ["pg_dump", "write-ahead log"], "expect": "answer"}
+{"question": "How does PostgreSQL full text search work with tsvector and tsquery?", "expected_source": "postgresql.md", "expected_terms": ["tsvector", "tsquery"], "expect": "answer"}
+{"question": "Why use a connection pooler like PgBouncer with PostgreSQL?", "expected_source": "postgresql.md", "expected_terms": ["pgbouncer", "reuses", "connections"], "expect": "answer"}
+{"question": "How does tensor parallelism split a model across GPUs?", "expected_source": "vllm.md", "expected_terms": ["tensor parallelism", "shards", "gpus"], "expect": "answer"}
+{"question": "What quantization formats does vLLM support and why quantize a model?", "expected_source": "vllm.md", "expected_terms": ["awq", "gptq", "fp8", "memory"], "expect": "answer"}
+{"question": "What should I do when the vLLM server runs out of CUDA memory?", "expected_source": "vllm.md", "expected_terms": ["out of memory", "kv cache", "quantized"], "expect": "answer"}
+{"question": "How do I install vLLM and what does gpu-memory-utilization control?", "expected_source": "vllm.md", "expected_terms": ["pip", "gpu-memory-utilization", "fraction"], "expect": "answer"}
+{"question": "How does the vLLM offline LLM class handle batch generation?", "expected_source": "vllm.md", "expected_terms": ["offline", "samplingparams", "prompts"], "expect": "answer"}
+{"question": "Is the vLLM server compatible with the OpenAI API?", "expected_source": "vllm.md", "expected_terms": ["openai", "base url", "endpoints"], "expect": "answer"}
+{"question": "When are invoices generated and how long are they kept?", "expected_source": "support_faq.md", "expected_terms": ["first day", "twelve months"], "expect": "answer"}
+{"question": "What happens after a card payment fails?", "expected_source": "support_faq.md", "expected_terms": ["three automatic retries", "five days", "paused"], "expect": "answer"}
+{"question": "How do I export all workspace data and what does the export contain?", "expected_source": "support_faq.md", "expected_terms": ["zip archive", "documents", "comments"], "expect": "answer"}
+{"question": "How does single sign-on work and which plan includes SAML?", "expected_source": "support_faq.md", "expected_terms": ["saml", "enterprise plan", "email"], "expect": "answer"}
+{"question": "Where can I check service status and active incidents?", "expected_source": "support_faq.md", "expected_terms": ["status page", "incidents", "uptime"], "expect": "answer"}
+{"question": "What is a primary key and what do foreign key constraints protect?", "expected_source": "postgresql.md", "expected_terms": ["primary key", "referential integrity"], "expect": "answer"}
+{"question": "What index type does PostgreSQL use by default and what is it good for?", "expected_source": "postgresql.md", "expected_terms": ["b-tree", "equality", "range"], "expect": "answer"}
+{"question": "How do I configure Kubernetes ingress for my cluster?", "expected_source": null, "expected_terms": [], "expect": "escalate"}
+{"question": "What is a good recipe for sourdough bread?", "expected_source": null, "expected_terms": [], "expect": "escalate"}
+{"question": "How does MongoDB choose a shard key for sharding?", "expected_source": null, "expected_terms": [], "expect": "escalate"}
+{"question": "What will the stock market do tomorrow?", "expected_source": null, "expected_terms": [], "expect": "escalate"}
+{"question": "Can you book me a flight to Chicago next Friday?", "expected_source": null, "expected_terms": [], "expect": "escalate"}
+{"question": "How do I renew my driving licence in California?", "expected_source": null, "expected_terms": [], "expect": "escalate"}

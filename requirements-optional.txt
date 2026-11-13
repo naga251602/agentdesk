@@ -1,0 +1,12 @@
+# Production / scale-out extras — NOT needed to run the default build.
+# Dense embeddings + reranking (Weekend-2 design):
+sentence-transformers>=2.6
+# Postgres + pgvector storage adapter:
+psycopg[binary]>=3.1
+pgvector>=0.2
+# Real OpenTelemetry export instead of the in-process span log:
+opentelemetry-api>=1.24
+opentelemetry-sdk>=1.24
+# Async eval jobs / semantic cache at scale:
+redis>=5.0
+kafka-python>=2.0
